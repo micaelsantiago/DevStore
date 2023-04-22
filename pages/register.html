@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/global.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<title>DevStore - New Product</title>
+</head>
+<body>
+	<header>
+		<div class="container container--header">
+			<h1 class="container--header--logo">DevStore</h1>
+
+			<nav class="container--header--nav">
+				<div class="container--header--nav--mobile" onclick="toggleMenuMobile()">
+					<img src="../images/menu.png" alt="Menu mobile">
+				</div>
+
+				<div class="menu--mobile">
+					<a href="../index.html">Produtos</a>
+					<a href="">Cadastro</a>
+				</div>
+
+
+				<div class="container--header--nav--links">
+					<a href="../index.html">Produtos</a>
+					<a href="">Cadastro</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="container container--main">
+			<form action="#" class="container--main--form">
+				<h1>New Product</h1>
+
+				<label>
+					Title
+					<input type="text" name="product_title" required>
+				</label>
+
+				<div id="upload">
+					<span>Upload image:</span>
+					<input type="file" name="product_image" accept="image/png, image/jpeg" required>
+				</div>
+
+				<label>
+					Short description
+					<input type="text" name="product_shortDescription" required>
+				</label>
+
+				<label>
+					Full description
+					<textarea name="product_fullDescription" id="" cols="30" rows="10" required></textarea>
+				</label>
+
+				<button>Send</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container container--footer">
+			<p>Feito por <a href="https://github.com/micaelsantiago/" target="_blank">Micael Santiago</a></p>
+			<p>&#169; Mais um Dev - 2023</p>
+		</div>
+	</footer>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

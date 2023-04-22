@@ -1,0 +1,49 @@
+.container--main {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container--main--form {
+	display: flex;
+	flex-direction: column;	
+	align-items: stretch;
+	padding: 1rem;
+}
+
+.container--main--form h1 {
+	margin-bottom: 1rem;
+}
+
+.container--main--form label input,
+.container--main--form label textarea {
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid var(--color__text__secondary);
+	outline: 0;
+	padding: .75rem;
+	margin: 10px 0 1.5rem;
+}
+
+.container--main--form #upload {
+	margin-bottom: 1.5rem;
+}
+
+.container--main--form #upload span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.container--main--form label textarea {
+	resize: none;
+}
+
+.container--main--form button {
+	width: 80px;
+	padding: .75rem;
+	background: var(--color__button);
+	color: var(--color__text);
+	border-radius: 12px;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+}
