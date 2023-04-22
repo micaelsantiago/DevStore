@@ -13,7 +13,7 @@ Challenge proposed by the Discord community "Mais um Dev"!
 <br>
 
 <p align="center">
-  <img alt="Form Validator Project" src=".github/preview.png" width="100%">
+  <img alt="DevStore Project" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Technologies
