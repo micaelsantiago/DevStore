@@ -22,21 +22,6 @@ main {
 	margin: 10px 0 1.5rem;
 }
 
-.container--main--form #fileContent {
-	border-radius: 6px;
-	border: 1px solid var(--color__text__secondary);
-	margin: 10px 0 1.5rem;
-}
-
-.container--main--form #upload {
-	margin-bottom: 1.5rem;
-}
-
-.container--main--form #upload span {
-	display: block;
-	margin-bottom: 10px;
-}
-
 .container--main--form label textarea {
 	resize: none;
 }
@@ -55,11 +40,4 @@ main {
 	border: 0;
 	font-weight: bold;
 	cursor: pointer;
-}
-
-label input[type="file"] {
-  opacity: 0;
-  margin: 0;
-  padding: .5rem 0;
-
 }
