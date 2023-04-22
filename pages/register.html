@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/global.css">
 	<link rel="stylesheet" href="../css/register.css">
-	<title>DevStore - New Product</title>
+	<title>DevStore - Cadastrar Produto</title>
 </head>
 <body>
 	<header>
@@ -34,29 +34,31 @@
 	<main>
 		<section class="container container--main">
 			<form action="#" class="container--main--form">
-				<h1>New Product</h1>
-
 				<label>
-					Title
+					Título
 					<input type="text" name="product_title" required>
 				</label>
 
-				<div id="upload">
-					<span>Upload image:</span>
-					<input type="file" name="product_image" accept="image/png, image/jpeg" required>
-				</div>
-
+				<label id="file-upload-label">
+					Imagem
+					<div id="fileContent">
+						<input type="file" name="product_image" id="file-upload" accept="image/png, image/jpeg" required onchange="updateLabel()">
+					</div>
+				</label>
+				
 				<label>
-					Short description
+					Descrição curta
 					<input type="text" name="product_shortDescription" required>
 				</label>
 
 				<label>
-					Full description
+					Detalhe
 					<textarea name="product_fullDescription" id="" cols="30" rows="10" required></textarea>
 				</label>
 
-				<button>Send</button>
+				<div class="btn--area">
+					<input type="button" value="Salvar">
+				</div>
 			</form>
 		</section>
 	</main>

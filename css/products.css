@@ -1,8 +1,19 @@
+main {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
 .main {
 	padding: 1rem;
 }
 
-.main a {
+.btn--return {
+	width: 100%;
+	text-align: right;
+}
+
+.btn--return a {
 	display: inline-block;
 	margin: 1rem 0;
 	color: var(--color__primary);
@@ -12,35 +23,58 @@
 
 .container--main--content {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 1rem;
+	gap: 10rem;
 }
 
-.container--main--productImage {
+.container--main--content .container--main--content--details {
+	display: flex;
+	align-items: center;
+}
+
+.container--main--content .container--main--content--details  .container--main--productImage {
 	text-align: center;
 }
 
-.container--main--productImage img {
+.container--main--content .container--main--content--details  .container--main--productImage img {
 	width: 80%;
 }
 
-.container--main--productDescription {
+.container--main--content .container--main--content--details  .container--main--productDescription {
 	width: 50%;
 }
 
-.container--main--productDescription {
+.container--main--content .container--main--content--details  .container--main--productDescription {
 	width: 100%;
 	text-align: center;
 }
 
-.container--main--productFullDescription {
-	text-align: left;
-	margin-top: 3rem;
+.container--main--content .container--main--productFullDescription hr {
+	color: var(--color__text__secondary);
+}
+
+.container--main--content .container--main--productFullDescription h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 
 #price {
 	margin: 1rem 0;
 	font-size: 25px;
+}
+
+@media (max-width: 500px) {
+	.container--main--productFullDescription {
+		text-align: center;
+	}
+
+	.container--main--content .container--main--content--details {
+		flex-direction: column;
+		gap: 2rem;
+	}
 }

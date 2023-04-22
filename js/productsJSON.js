@@ -22,7 +22,7 @@ if (productsElement != null) {
 				</div>
 
 				<div class="products--content--description">
-					<p>${product.shortDescription}</p>
+					<p>${product.fullDescription}</p>
 				</div>
 
 				<div class="products--content--links">
@@ -56,19 +56,26 @@ function showProductDetails(productID) {
    html.classList.add('container--main--content');
 
    html.innerHTML = `
-		<div class="container--main--productImage">
-			<img src="../${product.image}" alt="Imagem do produto">
+		<div class="btn--return">
+			<a href="../index.html">Voltar</a>
 		</div>
-		
-		<div class="container--main--productDescription">
-			<h1>${product.title}</h1>
-			<p>${product.shortDescription}</p>
-			<p id="price">${product.price}</p>
 
-			<div class="container--main--productFullDescription">
-				<h2>Descrição</h2>
-				<p>${product.fullDescription}</p>
+		<div class="container--main--content--details">
+			<div class="container--main--productImage">
+				<img src="../${product.image}" alt="Imagem do produto">
 			</div>
+
+			<div class="container--main--productDescription">
+				<h1>${product.title}</h1>
+				<p>${product.shortDescription}</p>
+				<p id="price">${product.price}</p>
+			</div>
+		</div>
+
+		<div class="container--main--productFullDescription">
+			<hr>
+			<h2>Detalhes</h2>
+			<p>${product.fullDescription}</p>
 		</div>
    `;
 
